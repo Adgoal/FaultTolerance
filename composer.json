@@ -1,0 +1,51 @@
+{
+    "name": "adgoal-common/fault-tolerance",
+    "type": "library",
+    "description": "Adgoal FaultTolerance common library",
+    "license": "proprietary",
+    "require": {
+        "php": "^7.3",
+        "adgoal/broadway-saga": "^0.9",
+        "adgoal-common/alerting": "^4.0",
+        "adgoal-common/saga": "^4.0",
+        "broadway/broadway": "^2.3",
+        "broadway/event-store-dbal": "^0.5",
+        "enqueue/async-command": "^0.10",
+        "enqueue/enqueue-bundle": "^0.10",
+        "enqueue/fs": "^0.10",
+        "enqueue/job-queue": "^0.10",
+        "myclabs/deep-copy": "^1.9"
+    },
+    "require-dev": {
+        "jakub-onderka/php-console-highlighter": "^0.4",
+        "jakub-onderka/php-parallel-lint": "^1.0",
+        "mockery/mockery": "^1.2",
+        "phan/phan": "4.0.*",
+        "php-coveralls/php-coveralls": "^2.4",
+        "phpmd/phpmd": "^2.6",
+        "phpstan/phpstan": "^0.12",
+        "phpstan/phpstan-mockery": "^0.12",
+        "phpstan/phpstan-phpunit": "^0.12",
+        "phpunit/phpunit": "^8.0",
+        "roave/security-advisories": "dev-master",
+        "sensiolabs-de/deptrac-shim": "^0.12.0",
+        "symplify/easy-coding-standard": "8.3.*",
+        "vimeo/psalm": "^4.7"
+    },
+    "config": {
+        "preferred-install": {
+            "*": "dist"
+        },
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "AdgoalCommon\\FaultTolerance\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "AdgoalCommon\\FaultTolerance\\Tests\\Unit\\": "tests/unit"
+        }
+    }
+}
